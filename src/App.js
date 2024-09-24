@@ -32,17 +32,17 @@ export default function App() {
       </div>
       <div className={styles.wrapper}>
 
-      <img src="/Eclipse.png" className={styles.mainImg} />
+      <img src="/Eclipse.png" className={styles.mainImg} alt="Intro image" />
       </div>
       </Section>
 
-    <Section ></Section>
+    <Section >
     <div>
       <h2>Start growing your wealth with <br />Eclipse</h2>
       <p>All-in-one personal finance app that simplifies investment opportunities, expense <br/> tracking, and financial news for users..</p>
     </div>
-    <div className={styles.gridContainer}>
-  <ul>
+    <div className={styles.gridDiv}>
+  <ul className={styles.featureList}>
     <li className={styles.gridItem}>
   <div className={styles.iconContainer}>
     <img src={Icon} alt="Description of icon" className={styles.miniIcon} />
@@ -61,11 +61,50 @@ export default function App() {
     <p className={styles.description}>Eclipse provides you with the best investment opportunities in Mutual Funds and FDs.</p>
   </div>
 </li>
-
+<li className={styles.gridItem}>
+  <div className={styles.iconContainer}>
+    <img src={Icon} alt="Description of icon" className={styles.miniIcon} />
+  </div>
+  <div className={styles.textContainer}>
+    <h3 className={styles.title}>Latest Financial News</h3>
+    <p className={styles.description}>Eclipse provides you with the latest financial news and market trends.</p>
+  </div>
+</li>
+<li className={styles.gridItem}>
+  <div className={styles.iconContainer}>
+    <img src={Icon} alt="Description of icon" className={styles.miniIcon} />
+  </div>
+  <div className={styles.textContainer}>
+    <h3 className={styles.title}>Advance Tax Calculator
+    </h3>
+    <p className={styles.description}>Take the guesswork out of your tax calculations with advanced tax calculator.</p>
+  </div>
+</li>
+<li className={styles.gridItem}>
+  <div className={styles.iconContainer}>
+    <img src={Icon} alt="Description of icon" className={styles.miniIcon} />
+  </div>
+  <div className={styles.textContainer}>
+    <h3 className={styles.title}>Eclipse Education (For Users)
+    </h3>
+    <p className={styles.description}>Eclipse Education is a fintech blogging platform for users to learn about finance and investments.</p>
+  </div>
+</li>
+<li className={styles.gridItem}>
+  <div className={styles.iconContainer}>
+    <img src={Icon} alt="Description of icon" className={styles.miniIcon} />
+  </div>
+  <div className={styles.textContainer}>
+    <h3 className={styles.title}>Eclipse Education (For Writers)
+    </h3>
+    <p className={styles.description}>A fintech blogging platform for writers to showcase their work in finance and investments.</p>
+  </div>
+</li>
 
 
   </ul>
     </div>
+    </Section>
 
     <section></section>
 
