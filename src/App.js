@@ -106,14 +106,81 @@ export default function App() {
     </div>
     </Section>
 
-    <section></section>
+    <Section >
+    <div className={styles.blurDiv}>
+      <img
+    src="https://eclipsefin.netlify.app/_next/static/media/bg-pattern.5aa07776.webp"
+    alt="Background pattern"
+    className={styles.blurBackground}
+      />
+      <div className={styles.blurSection}>
+      <h2>Build a head start to your finances</h2>
+      <p>Eclipse is the perfect answer! Our platform enables you to create wealth, manage <br />your expenses, stay up to date with the latest financial news, and get ready for<br /> upcoming tax season.</p>
+      <Button >Start now</Button>
+    </div>
+    </div>
+    </Section>
+    <Section>
+    <div>
+      <h2>Find a plan to power your finances</h2>
+    </div>
+    <div className={styles.PricingContainer}>
+      <div className={styles.PricingCard}>
+        <h3 className={styles.PricingPlan}>Starter</h3>
+        <h4>12$ <span className={styles.monthly}>/mo</span></h4>
+        <p className={styles.PricingTag}>Ideal for growing finance</p>
+        <ul className={styles.PricingList}>
+         <li>Automated Expense Tracking(Detail Analysis)</li>
+         <li>Family Expense Tracking (4 Users Only)</li>
+         <li>Latest Fintech News</li>
+         <li>Investment Opportunities</li>
+         <li>Advance Tax Calculator</li>
+        </ul>
+        <Button buttonDark>Coming Soon!</Button>
+      </div>
+      <div className={styles.PricingCardBasic}>
+      <h3 className={styles.PricingPlan}>Basic plan</h3>
+        <h4>0$ <span className={styles.monthly}>/mo</span></h4>
+        <p className={styles.PricingTag}>For individuals</p>
+        <ul className={styles.PricingList}>
+         <li>Automated Expense Tracking</li>
+         <li>Family Expense Tracking(2 Users Only)</li>
+         <li>Latest Fintech News</li>
+         <li>Investment Opportunities(Only showcase)</li>
+         <li>Advance Tax Calculator</li>
+        </ul>
+        <Button large>Download Now!</Button>
+      </div>
+      <div className={styles.PricingCard}>
+      <h3 className={styles.PricingPlan}>Pro</h3>
+        <h4>32$ <span className={styles.monthly}>/mo</span></h4>
+        <p className={styles.PricingTag}>Built for financially savvy</p>
+        <ul className={styles.PricingList}>
+         <li>Automated Expense Tracking</li>
+         <li>Family Expense Tracking(6 Users Only)</li>
+         <li>Latest Fintech News</li>
+         <li>Personalized Investment Opportunities</li>
+         <li>Tax calculation and Tax saving schemes</li>
+        </ul>
+        <Button buttonDark>Coming Soon!</Button>
+        </div>
 
-    <section></section>
+
+    </div>
+
+
+    </Section>
 
     <section></section>
     </main>
     <footer>
-    © 2023 Inside Labs. All rights reserved.
+    <div className={styles.footerBorder}>
+      <div className={styles.links}>
+      <a href="https://twitter.com/InsideLabsInc?t=dVl3FS-Kuhj6JNfL3z1HOg&s=08">placeholder </a>
+      <a href="https://www.linkedin.com/company/inside-labs/">placeholder</a>
+      </div>
+      <span className={styles.footerText}>© 2023 Inside Labs. All rights reserved.</span>
+    </div>
     </footer>
     </>
   );

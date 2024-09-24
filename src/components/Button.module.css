@@ -13,16 +13,13 @@
   composes: button;
   background:  #943EEA;
   display: flex;
-  flex-direction: column; /* Stack items vertically */
-  align-items: center;    /* Center items horizontally */
-  justify-content: center; /* Center items vertically if the container has height */
-  text-align: center;     /* Center text */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   margin-top: 1rem;
   width: 120px;
   border-radius: 25px;
-
-
-
 }
 
 .buttonPink:hover{
@@ -31,4 +28,13 @@
 
 .buttonLarge {
   composes: buttonPink;
+  width: 85%;
+  margin-bottom: 1rem;
+}
+.buttonDark{
+  composes: buttonLarge;
+  background-color:#1F2937;
+}
+.buttonDark:hover{
+  background-color: #374151;
 }
