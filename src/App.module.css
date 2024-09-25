@@ -1,21 +1,20 @@
-.wrapper{
+.wrapper {
   max-width: var(--container-max);
   margin: auto;
-
 }
 
 header {
   top: 0;
   background-color: inherit;
 }
-.mainImg{
+.mainImg {
   width: 93%;
   height: 30%;
   border-radius: 20px;
   margin-top: 10em;
   box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.774);
-  }
-.header{
+}
+.header {
   composes: wrapper;
   display: flex;
   gap: 1rem;
@@ -24,10 +23,10 @@ header {
   margin-top: 0;
   padding-top: 5px;
 
-  nav{
+  nav {
     flex: 0.9;
   }
-  nav ul{
+  nav ul {
     list-style: none;
     display: flex;
     align-items: center;
@@ -36,7 +35,7 @@ header {
     justify-content: center;
     width: 100%;
   }
-  a{
+  a {
     text-decoration: none;
     color: white;
   }
@@ -45,13 +44,17 @@ header {
     color: #ffffff;
   }
 }
-h1{
+h1 {
   font-size: 35px;
   color: white;
   font-weight: bolder;
 }
 .intro {
-  background-image: linear-gradient(179.1deg, #FFFFFF 0.77%, rgba(223, 1, 1, 0) 182.09%);
+  background-image: linear-gradient(
+    179.1deg,
+    #ffffff 0.77%,
+    rgba(223, 1, 1, 0) 182.09%
+  );
   background-clip: text;
   color: transparent;
   font-size: 4em;
@@ -60,7 +63,6 @@ h1{
   margin-top: 3rem;
   margin-bottom: 15px;
   line-height: 1;
-
 }
 
 p {
@@ -69,13 +71,12 @@ p {
   margin-top: 0.5rem;
 }
 
-h2{
+h2 {
   font-weight: bolder;
   text-align: center;
   font-size: 2.1em;
   margin-bottom: 10px;
   line-height: 1.1;
-
 }
 .gridDiv {
   padding: 0 2rem;
@@ -132,24 +133,25 @@ h2{
 }
 
 /* Medium screens (e.g. tablets) */
-@media (min-width: 640px) { /* sm: */
+@media (min-width: 640px) {
+  /* sm: */
   .featureList {
     grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
   }
 }
 
 /* Large screens (e.g. desktop) */
-@media (min-width: 1024px) { /* lg: */
+@media (min-width: 1024px) {
+  /* lg: */
   .featureList {
     grid-template-columns: repeat(3, 1fr); /* 3 columns for large screens */
   }
 }
 
-.blurSection{
+.blurSection {
   position: relative;
   z-index: 1;
   text-align: center;
-
 }
 .blurBackground {
   width: 100%;
@@ -160,34 +162,33 @@ h2{
   left: 0;
   pointer-events: none;
   margin-top: -50px;
-  filter:blur(0.5px)
+  filter: blur(0.5px);
 }
 
-.blurDiv{
+.blurDiv {
   position: relative;
   width: 100%;
   height: auto;
   border-radius: 20px;
 }
-footer{
+footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.footerBorder{
+.footerBorder {
   border-top: 2px solid rgb(255, 255, 255, 0.2);
   width: 100%;
   margin: 0 5%;
 }
-.links{
+.links {
   display: flex;
   justify-content: end;
   gap: 15px;
 }
-.footerText{
+.footerText {
   display: inline-block;
   margin-bottom: 3rem;
-
 }
 .PricingContainer {
   display: grid;
@@ -204,28 +205,31 @@ footer{
   padding: 10px;
   width: 90%;
 }
-.PricingCardBasic{
+.PricingCardBasic {
   composes: PricingCard;
   border: 1px solid rgba(168, 85, 247, 1);
-  background-color: #151D2C;
+  background-color: #151d2c;
 }
-.PricingList{
+.PricingList {
   list-style-image: url('./svg/tick.svg');
   padding-left: 40px;
 }
-.PricingTag{
+.PricingTag {
   border-bottom: 1px gray solid;
   margin: 0;
   padding: 0;
 }
-h4{
-text-align: center;
-margin: 3rem;
+h4 {
+  text-align: center;
+  margin: 3rem;
 }
-.PricingPlan{
- text-align:center;
- color: #9333EA;
+.PricingPlan {
+  text-align: center;
+  color: #9333ea;
 }
-.monthly{
+.monthly {
   color: #cfcfcf8a;
+}
+.tbc {
+  text-align: center;
 }

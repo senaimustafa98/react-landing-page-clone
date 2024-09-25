@@ -1,17 +1,16 @@
 .button {
   background: var(--color);
   text-decoration: none;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   border-radius: var(--radius);
   font-family: inherit;
   color: white;
   margin: auto;
-
 }
 
 .buttonPink {
   composes: button;
-  background:  #943EEA;
+  background: #943eea;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,8 +21,8 @@
   border-radius: 25px;
 }
 
-.buttonPink:hover{
-  background-color: #A558F5;
+.buttonPink:hover {
+  background-color: #a558f5;
 }
 
 .buttonLarge {
@@ -31,10 +30,10 @@
   width: 85%;
   margin-bottom: 1rem;
 }
-.buttonDark{
+.buttonDark {
   composes: buttonLarge;
-  background-color:#1F2937;
+  background-color: #1f2937;
 }
-.buttonDark:hover{
+.buttonDark:hover {
   background-color: #374151;
 }

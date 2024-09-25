@@ -1,9 +1,6 @@
-
-
 .section {
-  composes: wrapper from "../App.module.css";
+  composes: wrapper from '../App.module.css';
   padding: 3rem;
-
 }
 
 .largeSection {
